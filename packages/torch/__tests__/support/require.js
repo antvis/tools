@@ -1,0 +1,2 @@
+
+global.required = true;

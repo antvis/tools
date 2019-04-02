@@ -1,0 +1,70 @@
+{
+  "name": "@antv/torch",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "wensen.lws <wensen.lws@alibaba-inc.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "index.js",
+  "bin": {
+    "torch-coverage": "./bin/coverage.js",
+    "torch": "./bin/torch.js"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:antvis/tools.git"
+  },
+  "scripts": {
+    "coverage": "npm run coverage-generator && npm run coverage-viewer",
+    "coverage-generator": "node bin/torch --compile --coverage --renderer --recursive __tests__/renderer",
+    "coverage-viewer": "node bin/coverage",
+    "test": "npm run test-main && npm run test-renderer && npm run test-http",
+    "test-main": "node bin/torch --compile --dom-global __tests__/main",
+    "test-renderer": "node bin/torch --compile --renderer --notify-on-fail __tests__/renderer",
+    "test-live": "node bin/torch --compile --interactive __tests__/renderer",
+    "test-http": "node bin/torch --dom-global --compile --http __tests__/main",
+    "test-http-live": "node bin/torch --compile --http --interactive __tests__/renderer",
+    "ci": "npm run lint && npm run test"
+  },
+  "dependencies": {
+    "@antv/istanbul": "^0.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "babel-plugin-istanbul": "~4.1.6",
+    "chokidar": "~2.0.3",
+    "commander": "~2.15.1",
+    "electron": "^4.1.0",
+    "electron-cookies": "~1.1.0",
+    "finalhandler": "~1.1.1",
+    "glob": "~7.1.2",
+    "is-electron-renderer": "~2.0.1",
+    "jsdom": "~11.10.0",
+    "jsdom-global": "~3.0.2",
+    "macaca-utils": "~1.0.0",
+    "microtemplate": "~1.0.2",
+    "minimatch": "~3.0.4",
+    "mocha": "~4.0.1",
+    "node-notifier": "~5.1.2",
+    "serve-static": "~1.13.1",
+    "source-map-support": "~0.4.15",
+    "which": "~1.2.14"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "less": "^3.9.0",
+    "pre-commit": "~1.2.2",
+    "standard": "~11.0.1"
+  }
+}

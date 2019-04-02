@@ -1,0 +1,3 @@
+--require __tests__/support/require.js
+--require-main __tests__/support/requireMain.js
+--preload __tests__/support/preload.js
