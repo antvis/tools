@@ -57,6 +57,7 @@ typings/
 lib
 dist
 build
+.DS_Store
 
 # lock
 package-lock.json
