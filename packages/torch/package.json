@@ -44,7 +44,7 @@
     "babel-plugin-istanbul": "~4.1.6",
     "chokidar": "~2.0.3",
     "commander": "~2.15.1",
-    "electron": "^4.1.0",
+    "electron": "~4.1.0",
     "electron-cookies": "~1.1.0",
     "finalhandler": "~1.1.1",
     "glob": "~7.1.2",
