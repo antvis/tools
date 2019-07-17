@@ -1,6 +1,6 @@
 {
   "name": "@antv/torch",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "> TODO: description",
   "author": "wensen.lws <wensen.lws@alibaba-inc.com>",
   "homepage": "",
@@ -16,7 +16,8 @@
   },
   "files": [
     "bin",
-    "lib"
+    "lib",
+    "renderer"
   ],
   "publishConfig": {
     "access": "public"
