@@ -1,7 +1,7 @@
 {
   "name": "@antv/torch",
-  "version": "1.0.3",
-  "description": "> TODO: description",
+  "version": "1.0.4",
+  "description": "torchjs for @antv.",
   "author": "wensen.lws <wensen.lws@alibaba-inc.com>",
   "homepage": "",
   "license": "ISC",
@@ -41,6 +41,7 @@
   "dependencies": {
     "@antv/istanbul": "^0.0.0",
     "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
     "@babel/register": "^7.0.0",
     "babel-plugin-istanbul": "~4.1.6",
     "chokidar": "~2.0.3",
@@ -52,6 +53,7 @@
     "is-electron-renderer": "~2.0.1",
     "jsdom": "~11.10.0",
     "jsdom-global": "~3.0.2",
+    "less": "^3.9.0",
     "macaca-utils": "~1.0.0",
     "microtemplate": "~1.0.2",
     "minimatch": "~3.0.4",
@@ -59,12 +61,10 @@
     "node-notifier": "~5.1.2",
     "serve-static": "~1.13.1",
     "source-map-support": "~0.4.15",
+    "typescript": "^3.5.3",
     "which": "~1.2.14"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "less": "^3.9.0",
     "pre-commit": "~1.2.2",
     "standard": "~11.0.1"
   }
