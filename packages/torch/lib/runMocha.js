@@ -45,7 +45,7 @@ module.exports = (args, callback) => {
 
   // default files to test/*.js
   let files = [];
-  const extensions = [ 'js' ];
+  const extensions = [ 'js', 'ts' ];
 
   if (!args.files.length) {
     args.files.push('test');
